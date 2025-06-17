@@ -18,7 +18,7 @@ const movies = [
   },
 ];
 
-const MoviesGrid = () => (
+const IntroGrid = () => (
   <div
     style={{
       display: "flex",
@@ -64,4 +64,4 @@ const MoviesGrid = () => (
   </div>
 );
 
-export default MoviesGrid;
+export default IntroGrid;
