@@ -25,9 +25,17 @@ Se deberá incluir también `README` con instrucciones de configuración/ejecuci
 Además, agregue la siguiente información a su archivo `README`:
 
 - ¿Cómo decidió las opciones técnicas y arquitectónicas utilizadas como parte de su solución?
-- ¿Hay alguna mejora que pueda hacer en su envío?
-- ¿Qué haría de manera diferente si se le asignara más tiempo?
 
+Observar que requeriría segun lo espcificado probablemente React Router para las 3 diferentes paginas y una serie de componentes que iban a tener funcionalidad compartida.
+
+Redux asi como RTL/Jest no lo considero necesario, si tuviese que hacer test seria esencialmente del click para el popup y para verificar que la carga/fetch de los titulos hubiese funcionado o fallado y se mostrase algun titulo o un error.
+
+- ¿Hay alguna mejora que pueda hacer en su envío?
+Tests, CSS algo mas agraciado con Tailwind quizas, paginacion desde el FrontEnd.
+
+- ¿Qué haría de manera diferente si se le asignara más tiempo?
+Tests y styling. Filtros de busqueda. Redux no porque lo considero demasiado para este caso en concreto
+aunque es cierto que segun los filtros a implementar podria tener uso.
 
 ## Detalles
 Necesitará construir las siguientes 3 páginas con React:
