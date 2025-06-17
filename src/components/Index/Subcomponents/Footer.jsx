@@ -33,7 +33,7 @@ const Footer = () => (
     style={{
       background: "#222",
       color: "#fff",
-      padding: "1rem 2rem",
+      padding: "1rem 1rem",
     }}
   >
     <div style={{ textAlign: "left" }}>
