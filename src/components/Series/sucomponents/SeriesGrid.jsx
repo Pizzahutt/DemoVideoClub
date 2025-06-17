@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import data from "../../../data/sample.json";
+import MoviePopup from "./MoviePopup";
 
 const placeholder = "https://placehold.co/300x200/EEE/31343C?text= ";
 
-const SeriesCard = ({ series }) => {
+const SeriesCard = ({ series, onTitleClick }) => {
   const [imgSrc, setImgSrc] = useState(
     series.images &&
       series.images["Poster Art"] &&
@@ -34,7 +35,12 @@ const SeriesCard = ({ series }) => {
         }}
         onError={() => setImgSrc(placeholder)}
       />
-      <h3 style={{ margin: "1rem 0 0 0" }}>{series.title}</h3>
+      <h3
+        style={{ margin: "1rem 0 0 0", cursor: "pointer", color: "#007bff" }}
+        onClick={onTitleClick}
+      >
+        {series.title}
+      </h3>
       <p style={{ margin: "0.5rem 0 0 0", fontSize: "0.9rem", color: "#666" }}>
         {series.releaseYear}
       </p>
@@ -43,6 +49,8 @@ const SeriesCard = ({ series }) => {
 };
 
 const SeriesGrid = () => {
+  const [selectedSerie, setSelectedSerie] = useState(null);
+
   const seriesList = data.entries
     .filter(
       (entry) => entry.programType === "series" && entry.releaseYear >= 2010
@@ -61,8 +69,16 @@ const SeriesGrid = () => {
       }}
     >
       {seriesList.map((series, idx) => (
-        <SeriesCard key={idx} series={series} />
+        <SeriesCard
+          key={idx}
+          series={series}
+          onTitleClick={() => setSelectedSerie(series)}
+        />
       ))}
+      <MoviePopup
+        movie={selectedSerie}
+        onClose={() => setSelectedSerie(null)}
+      />
     </div>
   );
 };
