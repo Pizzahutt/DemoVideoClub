@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import data from "../../../data/sample.json";
-
 import MoviePopup from "./MoviePopup";
 
 const placeholder = "https://placehold.co/300x200/EEE/31343C?text= ";
@@ -49,15 +47,8 @@ const SeriesCard = ({ series, onTitleClick }) => {
   );
 };
 
-const GenericGrid = () => {
+const GenericGrid = ({ items }) => {
   const [selectedSerie, setSelectedSerie] = useState(null);
-
-  const seriesList = data.entries
-    .filter(
-      (entry) => entry.programType === "series" && entry.releaseYear >= 2010
-    )
-    .sort((a, b) => a.title.localeCompare(b.title))
-    .slice(0, 20);
 
   return (
     <div
@@ -69,7 +60,7 @@ const GenericGrid = () => {
         justifyContent: "flex-start",
       }}
     >
-      {seriesList.map((series, idx) => (
+      {items.map((series, idx) => (
         <SeriesCard
           key={idx}
           series={series}

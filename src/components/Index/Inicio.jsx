@@ -13,7 +13,7 @@ const movies = [
     id: 2,
     title: "Popular Movies",
     image:
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+      "https://streamcoimg-a.akamaihd.net/000/110/1196/1101196-PosterArt-c47d98ddca64ef18cf79c78d6ab8b3ad.jpg",
     link: "/movies",
   },
 ];

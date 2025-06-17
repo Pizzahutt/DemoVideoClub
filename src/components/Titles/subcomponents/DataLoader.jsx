@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import data from "../../../data/sample.json";
 
-// Esto normalmente lo haria una slice de redux y un fetch pero en este caso
-// lo hacemos asi para simplificar el ejemplo y no tener que configurar redux
+// Esto normalmente lo manejaria una slice de redux con un fetch pero en este caso
+// lo hacemos asi para simplificar y no tener que configurar redux ni nada por el estilo
 
 const DataLoader = ({ programType, children }) => {
   const [loading, setLoading] = useState(true);
