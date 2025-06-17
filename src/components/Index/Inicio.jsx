@@ -6,7 +6,7 @@ const movies = [
     id: 1,
     title: "Popular Series",
     image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80",
+      "https://streamcoimg-a.akamaihd.net/000/129/01/12901-PosterArt-b18cb05ecda13ea274c4e32a2d6ea427.jpg",
     link: "/series",
   },
   {
