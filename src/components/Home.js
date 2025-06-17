@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./Index/Subcomponents/Header";
 import MoviesGrid from "./Index/Inicio";
-import Footer from "./Index/Footer";
+import Footer from "./Index/Subcomponents/Footer";
 
 
 
