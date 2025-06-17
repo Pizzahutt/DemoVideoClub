@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import data from "../../../data/sample.json";
+
 import MoviePopup from "./MoviePopup";
 
 const placeholder = "https://placehold.co/300x200/EEE/31343C?text= ";
