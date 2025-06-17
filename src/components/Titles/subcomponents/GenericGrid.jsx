@@ -49,7 +49,7 @@ const SeriesCard = ({ series, onTitleClick }) => {
   );
 };
 
-const SeriesGrid = () => {
+const GenericGrid = () => {
   const [selectedSerie, setSelectedSerie] = useState(null);
 
   const seriesList = data.entries
@@ -84,4 +84,4 @@ const SeriesGrid = () => {
   );
 };
 
-export default SeriesGrid;
+export default GenericGrid;

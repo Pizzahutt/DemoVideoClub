@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "../Home";
-import Series from "../Series/Series";
+import Series from "../Titles/Series";
 const AppRoutes = () => (
   <Switch>
     <Route exact path="/" component={Home} />
