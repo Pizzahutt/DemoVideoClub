@@ -8,4 +8,3 @@ Ejemplo de  VideoClub creado con create-react-app, para ejecutarlo simplemente e
 
 Utiliza Router para tener una navegación basica, los datos se consumen de un json y dispone de un manejador/mockeador para fetchs y errores con proba del 0.2, no utiliza fetch ni Redux y tampoco dispone de tests.
 
-En las instrucciones dentro de /Instructions he dejado contestadas las preguntas de la prueba.
